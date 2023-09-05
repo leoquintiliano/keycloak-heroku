@@ -1,6 +1,7 @@
 setup:
     addons:
-        - plan: heroku-postgresql:hobby-dev
+        # - plan: heroku-postgresql:hobby-dev
+        - plan: heroku addons:create heroku-postgresql:mini
           as: DATABASE
 build:
     docker:
